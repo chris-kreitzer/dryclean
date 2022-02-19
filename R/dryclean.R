@@ -93,7 +93,7 @@ globalVariables(c(".", "..ix", "L", "L1", "V1", "black_list_pct", "blacklisted",
 #' @author Aditya Deshpande
 
 
-prepare_detergent <- function(normal.table.path = NA, use.all = TRUE, choose.randomly = FALSE, choose.by.clustering = FALSE, number.of.samples = 50, save.pon = FALSE, path.to.save = NA, verbose = TRUE, num.cores = 1, tolerance = 0.0001, is.human = TRUE, build = "hg19", field = "reads.corrected", PAR.file = NULL, balance = FALSE){
+prepare_detergent = function(normal.table.path = NA, use.all = TRUE, choose.randomly = FALSE, choose.by.clustering = FALSE, number.of.samples = 50, save.pon = FALSE, path.to.save = NA, verbose = TRUE, num.cores = 1, tolerance = 0.0001, is.human = TRUE, build = "hg19", field = "reads.corrected", PAR.file = NULL, balance = FALSE){
     
     if (verbose){
         message("Starting the preparation of Panel of Normal samples a.k.a detergent")
