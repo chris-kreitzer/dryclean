@@ -710,6 +710,7 @@ start_wash_cycle <- function(cov, mc.cores = 1, detergent.pon.path = NA, verbose
     }
 
     all.chr = c(as.character(1:22), "X")
+    cov = readRDS(cov)
 
     is.chr = FALSE
     
@@ -794,4 +795,5 @@ start_wash_cycle <- function(cov, mc.cores = 1, detergent.pon.path = NA, verbose
 
 message("Giddy up 4!")
 
-    
+# a = start_wash_cycle(cov = '~/Documents/MSKCC/07_FacetsReview/DryClean/PON_BRCA/sample1.rds',
+#                      detergent.pon.path = 'detergent.rds', mc.cores = 4)
